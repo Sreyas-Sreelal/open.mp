@@ -30,7 +30,7 @@ static LARGE_INTEGER yo;
 #include <sys/time.h>
 #include <unistd.h>
 #define SET_TICKER_RESOLUTION(ms)
-#define LIBRARY_OPEN(path) dlopen(path, RTLD_LAZY | RTLD_LOCAL)
+#define LIBRARY_OPEN(path) dlopen(path, RTLD_LAZY | RTLD_GLOBAL)
 #define LIBRARY_GET_ADDR dlsym
 #define LIBRARY_FREE dlclose
 static timeval initialTime;
